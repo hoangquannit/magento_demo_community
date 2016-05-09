@@ -34,7 +34,9 @@
                 <block type="reports/product_viewed" before="right.permanent.callout" name="right.reports.product.viewed" template="reports/product_viewed.phtml" />
             </reference>
         </reference>
-
+        <remove name="catalog.compare.sidebar" />
+        <remove name="right.poll" />
+        <remove name="paypal.partner.right.logo" />
         <reference name="footer">
             <block type="core/template" name="countdown_promo" template="ml/countdown.phtml"/>
         </reference>
