@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <!--
+    Default layout, loads most of the pages
+    -->
+    <default>
+        <reference name="root">
+             <reference name="head">
+                 <action method="addItem"><type>skin_js</type><name>countdown/countdown.js</name></action>
+                 <action method="addItem"><type>skin_css</type><name>countdown/countdown.css</name></action>
+                 <action method="addJs"><script>fancybox/jquery.fancybox.js</script></action>
+                 <action method="addItem"><type>skin_js</type><name>js/owl.carousel.js</name></action>
+                 <action method="addItem"><type>skin_js</type><name>js/jquery.nivo.slider.js</name></action>
+                 <action method="addItem"><type>skin_js</type><name>js/custom.js</name></action>
+                 <action method="addItem"><type>skin_js</type><name>js/jquery.uniform.min.js</name></action>
+                 <action method="addCss"><stylesheet>facybox/jquery.fancybox.css</stylesheet></action>
+                 <action method="addCss"><stylesheet>css/global.css</stylesheet></action>
+                 <action method="addCss"><stylesheet>css/category.css</stylesheet></action>
+                 <action method="addCss"><stylesheet>css/blocklayered.css</stylesheet></action>
+                 <action method="addCss"><stylesheet>css/velnivoslider.css</stylesheet></action>
+                 <action method="addCss"><stylesheet>css/product_list.css</stylesheet></action>
+                 <action method="addCss"><stylesheet>css/blocknewsletter.css</stylesheet></action>
+                 <action method="addCss"><stylesheet>css/smartblogstyle.css</stylesheet></action>
+                 <action method="addCss"><stylesheet>css/product.css</stylesheet></action>
+                 <action method="addCss"><stylesheet>css/productcomments.css</stylesheet></action>
+                 <action method="addCss"><stylesheet>css/blockwishlist.css</stylesheet></action>
+                 <action method="addCss"><stylesheet>css/uniform.default.css</stylesheet></action>
+                 <action method="addCss"><stylesheet>css/blockcart.css</stylesheet></action>
+             </reference>
+            <action method="setTemplate"><template>page/2columns-left.phtml</template></action>
+            <action method="setIsHandle"><applied>1</applied></action>
+            <action method="setLayoutCode"><name>two_columns_left</name></action>
+            <reference name="right">
+                <block type="reports/product_viewed" before="right.permanent.callout" name="right.reports.product.viewed" template="reports/product_viewed.phtml" />
+            </reference>
+        </reference>
+
+        <reference name="footer">
+            <block type="core/template" name="countdown_promo" template="ml/countdown.phtml"/>
+        </reference>
+        <remove name="footer.newsletter" />
+    </default>
+
+    <PRODUCT_TYPE_configurable>
+        <reference name="product.info.options.wrapper.bottom">
+            <remove name="product.tierprices"/>
+            <remove name="product.clone_prices"/>
+            <action method="unsetChild"><name>product.info.sharing</name></action>
+            <action method="unsetChild"><name>product.info.addto</name></action>
+        </reference>
+    </PRODUCT_TYPE_configurable>
+</layout>
