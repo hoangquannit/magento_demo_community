@@ -25,15 +25,15 @@
  */
 $_product = $this->getProduct(); ?>
 <?php if ($this->displayProductStockStatus()): ?>
-    <?php
-    $first_product = $_product->getTypeInstance()
-                              ->getUsedProductCollection()
-                              ->setPageSize(1)
-                              ->getFirstItem();
-    ?>
+<!--    --><?php
+//    $first_product = $_product->getTypeInstance()
+//                              ->getUsedProductCollection()
+//                              ->setPageSize(1)
+//                              ->getFirstItem();
+//    ?>
     <?php if ($_product->isAvailable()):?>
         <p id="pQuantityAvailable">
-            <span id="quantityAvailable"><?php echo intval($first_product->getStockItem()->getQty());?></span>
+            <span id="quantityAvailable"><?php echo intval('20');?></span>
             <span id="quantityAvailableTxtMultiple"><?php  echo $this->helper('catalog')->__('Items');?></span>
         </p>
         <p id="availability_statut">

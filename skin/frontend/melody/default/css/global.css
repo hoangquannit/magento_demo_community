@@ -323,6 +323,7 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  margin: 0 auto;
 }
 
 .img-rounded {
@@ -9723,7 +9724,7 @@ div.star.star_on:after {
   text-align: center;
 }
 .box-container .box-content .dec-adv a {
-  color: white;
+  color: white!important;
 }
 .box-container .box-content .dec-adv h3 {
   margin: 0;
