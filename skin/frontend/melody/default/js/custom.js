@@ -32,5 +32,17 @@ $j(window).load(function(){
     if($j('#selectProductSort').length){
         $j('#selectProductSort').uniform();
     }
+
+    $j('.search-top-click').click(function(event){
+        event.preventDefault();
+        if($j('.search-top-click').hasClass('active')){
+            $j('#search_mini_form').slideToggle();
+            $j('.search-top-click').removeClass('active');
+        }else{
+            $j('#search_mini_form').slideToggle();
+            $j('.search-top-click').addClass('active');
+        }
+
+    });
 });
 
