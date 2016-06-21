@@ -32,7 +32,7 @@ $j(window).load(function(){
     if($j('#selectProductSort').length){
         $j('#selectProductSort').uniform();
     }
-
+    // click search icon on header
     $j('.search-top-click').click(function(event){
         event.preventDefault();
         if($j('.search-top-click').hasClass('active')){
@@ -41,6 +41,31 @@ $j(window).load(function(){
         }else{
             $j('#search_mini_form').slideToggle();
             $j('.search-top-click').addClass('active');
+        }
+
+    });
+    // Click user account on header
+    $j('.my-account-icon').click(function(event){
+        event.preventDefault();
+        if($j('.my-account-icon').hasClass('active')){
+            $j('#my-account-top').slideToggle();
+            $j('.my-account-icon').removeClass('active');
+        }else{
+            $j('#my-account-top').slideToggle();
+            $j('.my-account-icon').addClass('active');
+        }
+
+    });
+
+    // Click hot line on header
+    $j('.icon-mobile-phone').click(function(event){
+        event.preventDefault();
+        if($j('.icon-mobile-phone').hasClass('active')){
+            $j('.content-hotline').slideToggle();
+            $j('.icon-mobile-phone').removeClass('active');
+        }else{
+            $j('.content-hotline').slideToggle();
+            $j('.icon-mobile-phone').addClass('active');
         }
 
     });

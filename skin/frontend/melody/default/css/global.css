@@ -307,7 +307,7 @@ textarea {
 }
 
 a {
-  color: #626262!important;
+  color: #626262;
   text-decoration: none;
 }
 a:hover, a:focus {
@@ -7917,7 +7917,7 @@ body {
 .topbar .container .hotline .toogle_content {
   width: 250px;
   font-weight: 300;
-  font-size: 17px;
+  font-size: 14px;
   z-index: 999;
 }
 .topbar a {

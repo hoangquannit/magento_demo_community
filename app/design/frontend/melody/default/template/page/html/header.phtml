@@ -44,7 +44,7 @@
                 <div class="block vel-wrap">
                     <div class="block_content">
                         <div class="cus-hotline btn-group"><em class="current icon icon-mobile-phone"></em>
-<!--                            <div class="content-hotline toogle_content">Call Us +0 (123) 456 78 90</div>-->
+                            <div class="content-hotline toogle_content">Call Us +0 (123) 456 78 90</div>
                         </div>
                     </div>
                 </div>
@@ -58,8 +58,11 @@
 
 
             <div id="header_user" class="btn-group">
-                <div class="current">
+                <div class="current my-account-icon">
                     <span class="icon icon-user"></span>
+                </div>
+                <div id="my-account-top" class="toogle_content list-inline links">
+                    <?php echo $this->getChildHtml('topLinks') ?>
                 </div>
             </div>
 
@@ -116,10 +119,6 @@
 
 
         <!-- Account -->
-
-        <div id="header-account" class="skip-content">
-            <?php echo $this->getChildHtml('topLinks') ?>
-        </div>
     </div>
 </header>
 </div>
