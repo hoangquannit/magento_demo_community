@@ -71,6 +71,9 @@
                 <template>page/2columns-left.phtml</template>
             </action>
         </reference>
+        <reference name="product_list">
+            <action method="setColumnCount"><count>3</count></action>
+        </reference>
     </catalog_category_default>
 
     <catalogsearch_result_index>

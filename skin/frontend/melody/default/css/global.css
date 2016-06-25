@@ -3324,6 +3324,7 @@ input[type="button"].btn-block {
   background-color: white;
   border: 1px solid #dddddd;
   margin-left: -1px;
+  color: #626262!important;
 }
 .pagination > li:first-child > a,
 .pagination > li:first-child > span {
@@ -3339,7 +3340,7 @@ input[type="button"].btn-block {
 .pagination > li > a:hover, .pagination > li > a:focus,
 .pagination > li > span:hover,
 .pagination > li > span:focus {
-  color: white;
+  color: white!important;
   background-color: #e91e63;
   border-color: #e91e63;
   cursor: pointer;
