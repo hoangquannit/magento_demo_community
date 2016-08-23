@@ -1,4 +1,7 @@
 <?php
+$categories = Mage::getModel('catalog/category')
+    ->getCollection()
+    ->addAttributeToFilter('is_sale_on_homepage', 'is_sale_1');
 $category_id_array = array(6,9,10,11);
 //$category_id = 11;
 
