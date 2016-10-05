@@ -8010,7 +8010,7 @@ body.index #center_column .products-carousel .carousel-control.right {
   content: "";
   top: 0px;
   left: 0px;
-  background: url(../img/bg-heder.jpg) no-repeat;
+  background: url(../images/bg-heder.jpg) no-repeat;
   background-size: cover;
   position: absolute;
   height: 90px;
@@ -11390,6 +11390,9 @@ ul.dropdown-menu > li > a:hover, ul.dropdown-menu > li > a:focus{
         animation-name: hovermenu;
     }
 }
-
+.slideshow-container{
+  border: none!important;
+  margin: 0px !important;
+}
 
 
